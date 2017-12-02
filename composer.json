@@ -1,0 +1,25 @@
+{
+    "name": "stevan/autoload_composer",
+    "description": "using autoload feature with composer",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stevan Ristov",
+            "email": "stevanris@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^1.22"
+    },
+
+    "autoload": {
+        "classmap": ["classes/","library/"],
+        "files": ["config/database.php"],
+        "psr-4": {
+          "App\\": "src/",
+          "": "controllers/"
+        }
+
+    }
+}
